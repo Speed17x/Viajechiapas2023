@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/**
+ * [Table of contents]
+ *   1 Reset Styles
+ *   2 Context Styles
+ *   3 Helpers
+ *     3.1 Page layout
+ *     3.2 Text styling
+ *     3.3 Offsets
+ *     3.4 Sections
+ *     3.5 Grid modules
+ *     3.6 Backgrounds
+ *     3.7 Utilities custom
+ *   4 Plugins
+ *     4.1 Animate
+ *     4.2 Preloader
+ *     4.3 ToTop
+ *     4.4 RD Navbar
+ *     4.5 Swiper
+ *     4.6 Google Map
+ *     4.7 Search Results
+ *     4.8 Isotope
+ *     4.9 Nav custom
+ *     4.10 Panel custom
+ *     4.11 Tooltop Custom
+ *     4.12 Counter
+ *     4.13 Progress Bars
+ *     4.14 Circle Progress Bars
+ *     4.15 Time Circles
+ *     4.16 Owl Carousel
+ *     4.17 Lightgallery
+ *     4.18 Material Parallax
+ *   5 Components
+ *     5.1 Typography
+ *     5.2 Banners
+ *     5.3 Brand
+ *     5.4 Links
+ *     5.5 Blocks
+ *     5.6 Boxes
+ *     5.7 Groups
+ *     5.8 Responsive units
+ *     5.9 Lists
+ *     5.10 Images
+ *     5.11 Icons
+ *     5.12 Tables custom
+ *     5.13 Dividers
+ *     5.14 Buttons
+ *     5.15 Forms
+ *     5.16 Posts
+ *     5.17 Quotes
+ *     5.18 Thumbnails
+ *     5.19 Breadcrumbs
+ *     5.20 Pagination custom
+ *     5.21 Snackbars
+ *     5.22 Footers
+ *     5.23 Single Product
+ *     5.24 Overlay
+ *     5.25 Landing
+ */
+/** @section Reset Styles*/
+
+/** @section Context Styles */
+/** @section Thumbnails */
+.figure-light figcaption {
+	padding-top: 10px;
+	color: #cdcdcd;
+}
+
+.thumbnail-classic {
+	position: relative;
+	overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+	.thumbnail-classic {
+		max-height: 80vw;
+	}
+}
+
+.desktop:not([data-x-mode='true']) .thumbnail-classic:hover .thumbnail-classic-caption {
+	opacity: 1;
+}
+
+.desktop:not([data-x-mode='true']) .thumbnail-classic .thumbnail-classic-caption {
+	opacity: 0;
+}
+
+.thumbnail-classic-figure {
+	display: block;
+}
+
+.thumbnail-classic-figure img {
+	width: 100%;
+}
+
+.thumbnail-classic-caption {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 25px;
+	background: rgba(28, 39, 72, 0.68);
+	pointer-events: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.thumbnail-classic-caption::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 17px;
+	right: 17px;
+	bottom: 15px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 8%, transparent 8%, transparent 92%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 8%, transparent 8%, transparent 92%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 11%, transparent 11%, transparent 89%, rgba(255, 255, 255, 0.5) 89%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 11%, transparent 11%, transparent 89%, rgba(255, 255, 255, 0.5) 89%, rgba(255, 255, 255, 0.5) 100%);
+	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+	background-position: 0 0, 0 100%, 0 0, 100% 0;
+	background-repeat: no-repeat;
+}
+
+.thumbnail-classic-title {
+	font-weight: 700;
+	letter-spacing: .025em;
+}
+
+.thumbnail-classic-time {
+	font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	position: relative;
+	text-transform: uppercase;
+	margin-top: 16px;
+}
+
+.thumbnail-classic-time2 {
+	font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	position: relative;
+	text-transform: uppercase;
+	margin-top: 16px;
+	font-size: 10vh;
+}
+
+.thumbnail-classic-time::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 2px;
+	width: 36px;
+	background-color: #4ac4cf;
+	top: -7px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+@media (min-width: 1600px) {
+	html.boxed .page {
+		max-width: 1570px;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: 0 0 23px 0 rgba(1, 1, 1, 0.1);
+	}
+
+}
+
+/** @section Text styling */
+.text-italic {
+	font-style: italic;
+}
+
+.text-normal {
+	font-style: normal;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+
+.font-weight-thin {
+	font-weight: 100;
+}
+
+.font-weight-light {
+	font-weight: 300;
+}
+
+.font-weight-regular {
+	font-weight: 400;
+}
+
+.font-weight-medium {
+	font-weight: 500;
+}
+
+.font-weight-sbold {
+	font-weight: 600;
+}
+
+.font-weight-bold {
+	font-weight: 700;
+}
+
+.font-weight-ubold {
+	font-weight: 900;
+}
+
+.text-spacing-0 {
+	letter-spacing: 0;
+}
+
+.text-primary {
+	color: #4ac4cf !important;
+}
+
+.text-white-5 {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/** @section Offsets */
