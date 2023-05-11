@@ -13468,11 +13468,9 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .cssload-speeding-wheel {
-	width: 36px;
-	height: 36px;
+	width: 30vh;
+	height: 30vh;
 	margin: 0 auto;
-	border: 3px solid #01b3a7;
-	border-radius: 50%;
 	border-left-color: transparent;
 	border-bottom-color: transparent;
 	animation: cssload-spin .88s infinite linear;
