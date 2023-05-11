@@ -24707,7 +24707,7 @@ img.mfp-img {
 }
 
 body::-webkit-scrollbar {
-  width: 1vw;
+  width: .2vw;
   height: 0;
 }
 
