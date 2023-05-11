@@ -24705,3 +24705,18 @@ img.mfp-img {
 		display: none;
 	}
 }
+
+body::-webkit-scrollbar {
+  width: 1vw;
+  height: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(100,100,100);
+  border-radius: 0.5vw;
+  border: .1vw solid rgb(70,70,70);
+}
